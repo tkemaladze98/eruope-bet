@@ -279,7 +279,7 @@ body {
     right: 0px;
 }
 
-.leaderBord .leaderBord-article #total-prize .example-info{
+.leaderBord .leaderBord-article #total-prize #example-info{
     position: absolute;
     right: -20px;
     top: 40px;
@@ -287,6 +287,7 @@ body {
     border-radius: 8px;
     display: none!important;
 }
+
 
 .leaderBord .leaderBord-article aside .place-prize {
     display: flex;
@@ -348,14 +349,14 @@ body {
 }
 
 .leaderBord .leaderBord-article .right #total-prize div{
-    background-color: rgb(35, 125, 125);
+    background-color: #D2770E;
     display: inline-block;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .leaderBord .leaderBord-article .right #total-prize p {
-    background-color: rgb(45, 155, 160);
+    background-color: #F19020;
     display: inline-block;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -364,7 +365,7 @@ body {
 }
 
 .leaderBord .leaderBord-article .right #total-prize span {
-    background-color: rgb(35, 125, 125);
+    background-color: #D2770E;
     border-bottom-right-radius: 15px;
     padding: 2px 10px;
     ;
