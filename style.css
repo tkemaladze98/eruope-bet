@@ -8,7 +8,7 @@ body {
 .fixed-img{
     position: fixed;
     right: 0px;
-    top: 20px;
+    top: 40px;
     z-index: 100;
 }
 
