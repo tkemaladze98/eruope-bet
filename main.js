@@ -34,7 +34,7 @@ var slotsNameArray = [
 
 function slotGame(slot) {
     return `<a class="images">
-                <img src="file:///C:/Users/A/Desktop/eruope-bet/assets/thumb/${slot}.jpg" alt="">
+                <img src="./assets/thumb/${slot}.jpg" alt="">
             </a>`
 }
 
