@@ -472,6 +472,7 @@ body {
 
 .rules .terms a img{
     width: 25px;
+    height: 25px;
     transform: rotate(-90deg);
 }
 
