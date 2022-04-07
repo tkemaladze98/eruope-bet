@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(20, 20, 40);
+    background-color: #141529;
     position: relative;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .date-section span {
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .date-section div {
@@ -40,14 +40,17 @@ body {
 
 .stock-info p {
     background-color: rgb(40, 50, 60);
-    border-radius: 15px;
+    border-radius: 14px;
     color: white;
     display: inline-block;
     padding: 3px 10px;
     box-sizing: border-box;
 }
 
-.stock-info h2,
+.stock-info h2{
+    color: white;
+    font-size: 24px;
+}
 .stock-info span {
     color: white;
 }
@@ -155,6 +158,7 @@ body {
 
 .weeks-info article div span {
     color: white;
+    font-size: 15px;
 }
 
 .leaderBord {
@@ -227,13 +231,13 @@ body {
 .leaderBord .leaderBord-article .spin-info h3 {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .leaderBord .leaderBord-article .spin-info h5 {
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .leaderBord .leaderBord-article aside article {
@@ -322,7 +326,7 @@ body {
 .leaderBord .leaderBord-article aside table tr .place {
     width: 29.5%;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: rgb(25, 35, 50);
@@ -334,7 +338,7 @@ body {
 .leaderBord .leaderBord-article aside table tr .prize {
     width: 69.5%;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: rgb(25, 35, 50);
@@ -373,7 +377,7 @@ body {
 
 .leaderBord .leaderBord-article .prize-info p {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -396,11 +400,11 @@ body {
 
 .slots h3{
     color: white;
-    font-size: 25px;
+    font-size: 24px;
 }
 .slots p{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .slots .carousel {
@@ -413,8 +417,8 @@ body {
 }
 
 .slots .carousel .images{
-    width: 150px;
-    height: 200px;
+    width: 192px;
+    height: 224px;
     margin: 0px 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -444,7 +448,7 @@ body {
 
 .rules h2{
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -468,6 +472,7 @@ body {
 .rules .terms a p{
     color: white;
     margin: 0px;
+    font-size: 15px;
 }
 
 .rules .terms a img{
@@ -491,7 +496,7 @@ body {
 }
 
 .pages{
-    padding: 30px 0px;
+    padding: 20px 0px;
     position: relative;
 }
 
@@ -514,6 +519,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 13px;
 }
 
 .pages article #left img{
@@ -526,6 +532,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 13px;
 }
 
 .pages article #right img{
@@ -535,7 +542,8 @@ body {
 }
 
 .pages article .btn{
-    min-width: 150px;
-    background-color: rgb(228, 98, 5);
+    min-width: 170px;
+    height: 48px;
+    background-color: #F05A22;
     border: none;
 }
