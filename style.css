@@ -2,7 +2,14 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(20, 20, 40);
-    height: 2000px;
+    position: relative;
+}
+
+.fixed-img{
+    position: fixed;
+    right: 0px;
+    top: 20px;
+    z-index: 100;
 }
 
 .date-section {
@@ -51,11 +58,16 @@ body {
 
 .banner-area article div {
     background-image: url(./assets/tab-bg.png);
-    width: 100%;
-    max-width: 274px;
-    min-height: 145px;
+    width: 274px;
+    height: 145px;
     background-size: cover;
     margin: 0px 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.activeDiv{
+    background-image: url(./assets/tab-bg-active.png)!important;
 }
 
 .banner-area article div a {
@@ -68,15 +80,21 @@ body {
     text-decoration: none;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 .banner-area article {
     position: absolute;
     bottom: -75px;
-    display: flex;
+    display: block;
     width: 90%;
     left: 0px;
     right: 0px;
     margin: auto;
-    justify-content: center;
+    z-index: 10;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .banner-area article div span {
@@ -131,6 +149,10 @@ body {
     align-items: center;
 }
 
+.activeWeek {
+    background-color: #2E9EA1;
+}
+
 .weeks-info article div span {
     color: white;
 }
@@ -138,9 +160,44 @@ body {
 .leaderBord {
     background-color: rgb(25, 40, 60);
     position: relative;
+    padding-top: 40px;
 }
 
-.leaderBord .leaderBord-article{
+.leaderBord .catch-Xes{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(30, 50, 70);
+    border-radius: 10px;
+    display: flex;
+}
+
+.leaderBord .catch-Xes #left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderBord .catch-Xes #right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leaderBord .catch-Xes #right h2{
+    color: white;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.leaderBord .catch-Xes #right p{
+    color: white;
+    font-size: 15;
+    margin: 0px;
+}
+
+.leaderBord .leaderBord-article {
     width: 90%;
     margin: auto;
     padding-top: 50px;
@@ -150,153 +207,334 @@ body {
     flex-direction: column;
 }
 
-.leaderBord .leaderBord-article aside{
+.leaderBord .leaderBord-article aside {
     width: 48%;
 }
 
-.leaderBord .leaderBord-article .tables{
+.leaderBord .leaderBord-article .tables {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.leaderBord .leaderBord-article .spin-info{
+.leaderBord .leaderBord-article .spin-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.leaderBord .leaderBord-article .spin-info h3{
+.leaderBord .leaderBord-article .spin-info h3 {
     color: white;
     text-align: center;
     font-size: 20px;
 }
-.leaderBord .leaderBord-article .spin-info h5{
+
+.leaderBord .leaderBord-article .spin-info h5 {
     color: white;
     text-align: center;
     font-size: 15px;
 }
 
-.leaderBord .leaderBord-article aside article{
+.leaderBord .leaderBord-article aside article {
     background-color: rgb(30, 50, 70);
     border-radius: 15px;
     padding-bottom: 35px;
 }
 
-.leaderBord .leaderBord-article .left #total-prize{
-    background-color: rgb(35,125,125);
+.leaderBord .leaderBord-article .left #total-prize div{
+    background-color: rgb(35, 125, 125);
     display: inline-block;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
-.leaderBord .leaderBord-article .left #total-prize p{
-    background-color: rgb(45,155,160);
+.leaderBord .leaderBord-article .left #total-prize p {
+    background-color: rgb(45, 155, 160);
     display: inline-block;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 0px;
     padding: 2px 10px;
 }
-.leaderBord .leaderBord-article .left #total-prize span{
-    background-color: rgb(35,125,125);
+
+.leaderBord .leaderBord-article .left #total-prize span {
+    background-color: rgb(35, 125, 125);
     border-bottom-right-radius: 15px;
-    padding: 2px 10px;;
+    padding: 2px 10px;
+    ;
 }
 
-.leaderBord .leaderBord-article aside .place-prize{
+
+.leaderBord .leaderBord-article #total-prize{
+    position: relative;
+}
+
+.leaderBord .leaderBord-article #total-prize img{
+    position: absolute;
+    right: 0px;
+}
+
+.leaderBord .leaderBord-article #total-prize .example-info{
+    position: absolute;
+    right: -20px;
+    top: 40px;
+    background-color: white!important;
+    border-radius: 8px;
+    display: none!important;
+}
+
+.leaderBord .leaderBord-article aside .place-prize {
     display: flex;
     width: 80%;
     margin: auto;
     margin-top: 15px;
 }
 
-.leaderBord .leaderBord-article aside .place-prize h6{
+.leaderBord .leaderBord-article aside .place-prize h6 {
     width: 30%;
     text-align: center;
-    color: rgb(80,90,100);
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-.leaderBord .leaderBord-article aside .place-prize p{
-    width: 70%;
-    text-align: center;
-    color: rgb(80,90,100);
+    color: rgb(80, 90, 100);
     font-size: 13px;
     margin-bottom: 10px;
 }
 
-.leaderBord .leaderBord-article aside table{
+.leaderBord .leaderBord-article aside .place-prize p {
+    width: 70%;
+    text-align: center;
+    color: rgb(80, 90, 100);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.leaderBord .leaderBord-article aside table {
     width: 80%;
     margin: auto;
 }
 
-.leaderBord .leaderBord-article aside table tr{
+.leaderBord .leaderBord-article aside table tr {
     display: flex;
     justify-content: space-between;
     min-height: 35px;
     margin: 3px 0px;
 }
-.leaderBord .leaderBord-article aside table tr .place{
+
+.leaderBord .leaderBord-article aside table tr .place {
     width: 29.5%;
     color: white;
     font-size: 15px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    background-color: rgb(25,35,50);
+    background-color: rgb(25, 35, 50);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.leaderBord .leaderBord-article aside table tr .prize{
+
+.leaderBord .leaderBord-article aside table tr .prize {
     width: 69.5%;
     color: white;
     font-size: 15px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: rgb(25,35,50);
+    background-color: rgb(25, 35, 50);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.leaderBord .leaderBord-article .right #total-prize{
-    background-color: rgb(35,125,125);
+.leaderBord .leaderBord-article .right #total-prize div{
+    background-color: rgb(35, 125, 125);
     display: inline-block;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
-.leaderBord .leaderBord-article .right #total-prize p{
-    background-color: rgb(45,155,160);
+.leaderBord .leaderBord-article .right #total-prize p {
+    background-color: rgb(45, 155, 160);
     display: inline-block;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 0px;
     padding: 2px 10px;
 }
-.leaderBord .leaderBord-article .right #total-prize span{
-    background-color: rgb(35,125,125);
+
+.leaderBord .leaderBord-article .right #total-prize span {
+    background-color: rgb(35, 125, 125);
     border-bottom-right-radius: 15px;
-    padding: 2px 10px;;
+    padding: 2px 10px;
+    ;
 }
 
-.leaderBord .leaderBord-article .prize-info{
+.leaderBord .leaderBord-article .prize-info {
     max-width: 800px;
     margin: 30px auto;
 }
 
-.leaderBord .leaderBord-article .prize-info p{
-    color: rgba(255,255,255,0.6);
+.leaderBord .leaderBord-article .prize-info p {
+    color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
     text-align: center;
 }
 
-.leaderBord img{
+.leaderBord .plus {
     position: absolute;
     left: 0px;
     right: 0px;
     top: 0px;
     bottom: 0px;
     margin: auto;
+    z-index: 10;
+}
+
+.slots{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0px;
+    box-sizing: border-box;
+}
+
+.slots h3{
+    color: white;
+    font-size: 25px;
+}
+.slots p{
+    color: white;
+    font-size: 15px;
+}
+
+.slots .carousel {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    margin: 0px;
+    white-space: nowrap;
+    padding: 20px 0px;
+}
+
+.slots .carousel .images{
+    width: 150px;
+    height: 200px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slots .carousel .images:first-child{
+    margin-left: 0px;
+}
+
+.slots .carousel .images:last-child{
+    margin-right: 0px;
+}
+
+.slots .carousel .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rules{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.rules h2{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rules .terms{
+    margin-bottom: 10px;
+}
+
+.rules .terms a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    background-color: rgb(40, 50, 60);
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rules .terms a p{
+    color: white;
+    margin: 0px;
+}
+
+.rules .terms a img{
+    width: 25px;
+    transform: rotate(-90deg);
+}
+
+.rules .terms .hidden-text{
+    display: none;
+    margin-top: 20px;
+    color: white;
+}
+
+.active-text{
+    display: block!important;
+}
+
+.active-rotate{
+    transform: rotate(90deg)!important;
+}
+
+.pages{
+    padding: 30px 0px;
+    position: relative;
+}
+
+.pages .border-image{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 5px;
+}
+
+.pages article{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages article #left{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pages article #left img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.pages article #right{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pages article #right img{
+    width: 25px;
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+.pages article .btn{
+    min-width: 150px;
+    background-color: rgb(228, 98, 5);
+    border: none;
 }
