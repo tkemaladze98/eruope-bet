@@ -533,6 +533,7 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 13px;
+    text-align: end;
 }
 
 .pages article #right img{
