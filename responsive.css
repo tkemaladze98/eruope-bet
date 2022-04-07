@@ -3,3 +3,9 @@
         width: 150px;
     }
 }
+
+@media (max-width:575px){
+    .leaderBord .catch-Xes{
+        width: 75%;
+    }
+}
