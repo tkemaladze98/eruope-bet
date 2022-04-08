@@ -300,6 +300,7 @@ body {
 
 .leaderBord .leaderBord-article #total-prize #example-info{
     position: absolute;
+    z-index: 15;
     right: -20px;
     top: 40px;
     background-color: white!important;
