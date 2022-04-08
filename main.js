@@ -4,17 +4,17 @@ const terms = document.querySelectorAll(".terms");
 const example = document.querySelectorAll(".example");
 
 weekDivs.forEach(o => {
-    if(o.classList.contains("activeDiv")){
+    if (o.classList.contains("activeDiv")) {
         o.children[0].children[0].style.color = "white";
         o.children[0].children[1].style.color = "white";
     }
 })
 
 example.forEach(o => {
-    o.addEventListener("mouseenter", function(){
+    o.addEventListener("mouseenter", function () {
         o.nextElementSibling.style.setProperty("display", "block", "important");
     })
-    o.addEventListener("mouseleave", function(){
+    o.addEventListener("mouseleave", function () {
         o.nextElementSibling.style.setProperty("display", "none", "important");
     })
 })
@@ -44,7 +44,7 @@ slotsNameArray.forEach(o => {
 })
 
 terms.forEach(o => {
-    o.addEventListener("click", function(){
+    o.addEventListener("click", function () {
         o.children[1].classList.toggle("active-text");
         o.children[0].children[1].classList.toggle("active-rotate");
     })
@@ -85,9 +85,9 @@ var isValid = function (s) {
                 tmpString += s[i];
                 trueOrFalse = false;
             } else if (s[i] == ")" && lastSymbol == "(" || s[i] == "}" && lastSymbol == "{" || s[i] == "]" && lastSymbol == "[") {
-                tmpString = tmpString.slice(0,tmpString.length - 1);
+                tmpString = tmpString.slice(0, tmpString.length - 1);
                 trueOrFalse = true;
-            }else{
+            } else {
                 trueOrFalse = false;
             }
         }
