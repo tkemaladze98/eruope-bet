@@ -320,7 +320,8 @@ body {
 .leaderBord .leaderBord-article aside .place-prize h6 {
     width: 30%;
     text-align: center;
-    color: rgb(80, 90, 100);
+    color: #9A9A9A;
+    opacity: 0.5;
     font-size: 13px;
     margin-bottom: 10px;
 }
@@ -328,7 +329,8 @@ body {
 .leaderBord .leaderBord-article aside .place-prize p {
     width: 70%;
     text-align: center;
-    color: rgb(80, 90, 100);
+    color: #9A9A9A;
+    opacity: 0.5;
     font-size: 13px;
     margin-bottom: 10px;
 }
