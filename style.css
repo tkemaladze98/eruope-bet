@@ -5,7 +5,7 @@ body {
     position: relative;
 }
 
-.fixed-img{
+.fixed-img {
     position: fixed;
     right: 0px;
     top: 40px;
@@ -51,12 +51,13 @@ body {
     font-weight: medium;
 }
 
-.stock-info h2{
+.stock-info h2 {
     color: white;
     font-size: 24px;
     font-family: Helvetica Neue One Caps;
     font-weight: bold;
 }
+
 .stock-info span {
     color: white;
     font-family: Helvetica Neue LT GEO;
@@ -77,8 +78,8 @@ body {
     vertical-align: top;
 }
 
-.activeDiv{
-    background-image: url(./assets/tab-bg-active.png)!important;
+.activeDiv {
+    background-image: url(./assets/tab-bg-active.png) !important;
 }
 
 .banner-area article div a {
@@ -179,7 +180,7 @@ body {
     padding-top: 40px;
 }
 
-.leaderBord .catch-Xes{
+.leaderBord .catch-Xes {
     width: 60%;
     margin: auto;
     background-color: rgb(30, 50, 70);
@@ -187,21 +188,21 @@ body {
     display: flex;
 }
 
-.leaderBord .catch-Xes #left{
+.leaderBord .catch-Xes #left {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.leaderBord .catch-Xes #right{
+.leaderBord .catch-Xes #right {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.leaderBord .catch-Xes #right h2{
+.leaderBord .catch-Xes #right h2 {
     color: white;
     font-size: 18px;
     margin: 0px;
@@ -209,7 +210,7 @@ body {
     font-weight: medium;
 }
 
-.leaderBord .catch-Xes #right p{
+.leaderBord .catch-Xes #right p {
     color: white;
     font-size: 14px;
     margin: 0px;
@@ -266,7 +267,7 @@ body {
     padding-bottom: 35px;
 }
 
-.leaderBord .leaderBord-article .left #total-prize div{
+.leaderBord .leaderBord-article .left #total-prize div {
     background-color: rgb(35, 125, 125);
     display: inline-block;
     border-bottom-right-radius: 15px;
@@ -289,23 +290,23 @@ body {
 }
 
 
-.leaderBord .leaderBord-article #total-prize{
+.leaderBord .leaderBord-article #total-prize {
     position: relative;
 }
 
-.leaderBord .leaderBord-article #total-prize img{
+.leaderBord .leaderBord-article #total-prize img {
     position: absolute;
     right: 0px;
 }
 
-.leaderBord .leaderBord-article #total-prize #example-info{
+.leaderBord .leaderBord-article #total-prize #example-info {
     position: absolute;
     z-index: 15;
     right: -20px;
     top: 40px;
-    background-color: white!important;
+    background-color: white !important;
     border-radius: 8px;
-    display: none!important;
+    display: none !important;
     font-family: Helvetica Neue LT GEO;
     font-weight: lighter;
 }
@@ -325,6 +326,7 @@ body {
     opacity: 0.5;
     font-size: 13px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .leaderBord .leaderBord-article aside .place-prize p {
@@ -334,6 +336,7 @@ body {
     opacity: 0.5;
     font-size: 13px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .leaderBord .leaderBord-article aside table {
@@ -372,7 +375,7 @@ body {
     justify-content: center;
 }
 
-.leaderBord .leaderBord-article .right #total-prize div{
+.leaderBord .leaderBord-article .right #total-prize div {
     background-color: #D2770E;
     display: inline-block;
     border-bottom-right-radius: 15px;
@@ -417,20 +420,21 @@ body {
     z-index: 10;
 }
 
-.slots{
+.slots {
     width: 90%;
     margin: auto;
     padding: 80px 0px;
     box-sizing: border-box;
 }
 
-.slots h3{
+.slots h3 {
     color: white;
     font-size: 24px;
     font-family: Helvetica Neue LT GEO;
     font-weight: bold;
 }
-.slots p{
+
+.slots p {
     color: white;
     font-size: 13px;
     font-family: Helvetica Neue LT GEO;
@@ -446,7 +450,7 @@ body {
     padding: 20px 0px;
 }
 
-.slots .carousel .images{
+.slots .carousel .images {
     width: 192px;
     height: 224px;
     margin: 0px 10px;
@@ -456,27 +460,27 @@ body {
     cursor: pointer;
 }
 
-.slots .carousel .images:first-child{
+.slots .carousel .images:first-child {
     margin-left: 0px;
 }
 
-.slots .carousel .images:last-child{
+.slots .carousel .images:last-child {
     margin-right: 0px;
 }
 
-.slots .carousel .images img{
+.slots .carousel .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.rules{
+.rules {
     width: 90%;
     margin: auto;
     padding-bottom: 30px;
 }
 
-.rules h2{
+.rules h2 {
     color: white;
     font-size: 18px;
     text-align: center;
@@ -485,11 +489,11 @@ body {
     font-weight: medium;
 }
 
-.rules .terms{
+.rules .terms {
     margin-bottom: 10px;
 }
 
-.rules .terms a{
+.rules .terms a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -501,7 +505,7 @@ body {
     cursor: pointer;
 }
 
-.rules .terms a p{
+.rules .terms a p {
     color: white;
     margin: 0px;
     font-size: 15px;
@@ -509,45 +513,45 @@ body {
     font-weight: medium;
 }
 
-.rules .terms a img{
+.rules .terms a img {
     width: 15px;
     height: 9px;
 }
 
-.rules .terms .hidden-text{
+.rules .terms .hidden-text {
     display: none;
     margin-top: 20px;
     color: white;
 }
 
-.active-text{
-    display: block!important;
+.active-text {
+    display: block !important;
 }
 
-.active-rotate{
-    transform: rotate(180deg)!important;
+.active-rotate {
+    transform: rotate(180deg) !important;
 }
 
-.pages{
+.pages {
     padding: 20px 0px;
     position: relative;
 }
 
-.pages .border-image{
+.pages .border-image {
     position: absolute;
     top: 0px;
     width: 100%;
     height: 5px;
 }
 
-.pages article{
+.pages article {
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-.pages article #left{
+.pages article #left {
     color: white;
     display: flex;
     align-items: center;
@@ -557,14 +561,14 @@ body {
     font-weight: lighter;
 }
 
-.pages article #left img{
+.pages article #left img {
     width: 15px;
     height: 9px;
     margin-right: 10px;
     transform: rotate(90deg);
 }
 
-.pages article #right{
+.pages article #right {
     color: white;
     display: flex;
     align-items: center;
@@ -575,14 +579,14 @@ body {
     font-weight: lighter;
 }
 
-.pages article #right img{
+.pages article #right img {
     width: 15px;
     height: 9px;
     margin-left: 10px;
     transform: rotate(-90deg);
 }
 
-.pages article .btn{
+.pages article .btn {
     min-width: 170px;
     height: 48px;
     background-color: #F05A22;
@@ -591,12 +595,13 @@ body {
     font-weight: medium;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     height: 5px;
     width: 4px;
     background: rgb(40, 50, 60);
 }
-::-webkit-scrollbar-thumb:horizontal{
+
+::-webkit-scrollbar-thumb:horizontal {
     background: #70E0B5;
     border-radius: 10px;
 }
