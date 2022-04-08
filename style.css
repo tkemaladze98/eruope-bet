@@ -261,8 +261,11 @@ body {
     font-weight: lighter;
 }
 
-.leaderBord .leaderBord-article aside article {
+.leaderBord .leaderBord-article aside{
     background-color: #203248;
+}
+
+.leaderBord .leaderBord-article aside article {
     border-radius: 15px;
     padding-bottom: 35px;
 }
