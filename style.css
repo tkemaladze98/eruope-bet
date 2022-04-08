@@ -24,6 +24,8 @@ body {
 .date-section span {
     color: white;
     font-size: 15px;
+    font-family: Helvetica Neue LT GEO;
+    font-family: bold;
 }
 
 .date-section div {
@@ -45,14 +47,20 @@ body {
     display: inline-block;
     padding: 3px 10px;
     box-sizing: border-box;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
 
 .stock-info h2{
     color: white;
     font-size: 24px;
+    font-family: Helvetica Neue One Caps;
+    font-weight: bold;
 }
 .stock-info span {
     color: white;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
 
 .banner-area {
@@ -129,6 +137,8 @@ body {
     color: white;
     text-align: center;
     font-size: 20px;
+    font-family: Helvetica Neue One Caps;
+    font-weight: bold;
 }
 
 .weeks-info article {
@@ -136,7 +146,7 @@ body {
     max-width: 700px;
     min-height: 40px;
     display: flex;
-    background-color: rgb(25, 40, 60);
+    background-color: #1A293B;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: absolute;
@@ -159,10 +169,12 @@ body {
 .weeks-info article div span {
     color: white;
     font-size: 15px;
+    font-family: MediatorNarrow-Bold;
 }
 
 .leaderBord {
-    background-color: rgb(25, 40, 60);
+    background-color: #1A293B;
+    opacity: 0.8;
     position: relative;
     padding-top: 40px;
 }
@@ -193,12 +205,16 @@ body {
     color: white;
     font-size: 18px;
     margin: 0px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
 
 .leaderBord .catch-Xes #right p{
     color: white;
     font-size: 14px;
     margin: 0px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: lighter;
 }
 
 .leaderBord .leaderBord-article {
@@ -232,16 +248,20 @@ body {
     color: white;
     text-align: center;
     font-size: 18px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
 
 .leaderBord .leaderBord-article .spin-info h5 {
     color: white;
     text-align: center;
     font-size: 14px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: lighter;
 }
 
 .leaderBord .leaderBord-article aside article {
-    background-color: rgb(30, 50, 70);
+    background-color: #203248;
     border-radius: 15px;
     padding-bottom: 35px;
 }
@@ -266,7 +286,6 @@ body {
     background-color: rgb(35, 125, 125);
     border-bottom-right-radius: 15px;
     padding: 2px 10px;
-    ;
 }
 
 
@@ -286,6 +305,8 @@ body {
     background-color: white!important;
     border-radius: 8px;
     display: none!important;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: lighter;
 }
 
 
@@ -380,6 +401,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     font-size: 13px;
     text-align: center;
+    font-family: HelveticaNeueLTGEO-55Roman;
 }
 
 .leaderBord .plus {
@@ -402,10 +424,14 @@ body {
 .slots h3{
     color: white;
     font-size: 24px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: bold;
 }
 .slots p{
     color: white;
     font-size: 13px;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
 
 .slots .carousel {
@@ -452,6 +478,8 @@ body {
     font-size: 18px;
     text-align: center;
     margin-bottom: 50px;
+    font-family: Helvetica Neue;
+    font-weight: medium;
 }
 
 .rules .terms{
@@ -474,12 +502,13 @@ body {
     color: white;
     margin: 0px;
     font-size: 15px;
+    font-family: Helvetica Neue;
+    font-weight: medium;
 }
 
 .rules .terms a img{
-    width: 25px;
-    height: 25px;
-    transform: rotate(-90deg);
+    width: 15px;
+    height: 9px;
 }
 
 .rules .terms .hidden-text{
@@ -493,7 +522,7 @@ body {
 }
 
 .active-rotate{
-    transform: rotate(90deg)!important;
+    transform: rotate(180deg)!important;
 }
 
 .pages{
@@ -521,11 +550,15 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 13px;
+    font-family: Helvetica Neue;
+    font-weight: lighter;
 }
 
 .pages article #left img{
-    width: 25px;
+    width: 15px;
+    height: 9px;
     margin-right: 10px;
+    transform: rotate(90deg);
 }
 
 .pages article #right{
@@ -535,12 +568,15 @@ body {
     cursor: pointer;
     font-size: 13px;
     text-align: end;
+    font-family: Helvetica Neue;
+    font-weight: lighter;
 }
 
 .pages article #right img{
-    width: 25px;
+    width: 15px;
+    height: 9px;
     margin-left: 10px;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 
 .pages article .btn{
@@ -548,4 +584,6 @@ body {
     height: 48px;
     background-color: #F05A22;
     border: none;
+    font-family: Helvetica Neue LT GEO;
+    font-weight: medium;
 }
