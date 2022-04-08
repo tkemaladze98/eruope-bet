@@ -89,6 +89,7 @@ var isValid = function (s) {
                 trueOrFalse = true;
             } else {
                 trueOrFalse = false;
+                break
             }
         }
     }
